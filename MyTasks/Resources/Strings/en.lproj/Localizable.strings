@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  MyTasks
+
+  Created by Slava Orlov on 30.01.2023.
+  
+*/
+
+"main_screen_title" = "My Tasks";
+"creation_screen_title" = "Create a task";
+"creation_screen_save_button" = "Save a task";

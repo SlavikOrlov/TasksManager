@@ -34,7 +34,7 @@ extension TaskCreationViewController: TaskCreationViewInput {
 private extension TaskCreationViewController {
 
     func configureUI() {
-        title = "Создать задачу"
+        title = NSLocalizedString("creation_screen_title", comment: "")
         configureBackground()
         configureTextField()
         configureSaveButton()
@@ -42,7 +42,7 @@ private extension TaskCreationViewController {
     }
 
     func configureBackground() {
-        view.backgroundColor = .white
+        view.backgroundColor = AssetColor.white
     }
 
     func configureTextField() {
@@ -54,10 +54,9 @@ private extension TaskCreationViewController {
     func configureSaveButton() {
         view.addSubview(saveButton)
         saveButton.translatesAutoresizingMaskIntoConstraints = false
-        saveButton.backgroundColor = .blue
-        saveButton.tintColor = .white
+        saveButton.backgroundColor = AssetColor.blue
         saveButton.layer.cornerRadius = 20
-        saveButton.setTitle("Сохранить", for: .normal)
+        saveButton.setTitle(NSLocalizedString("creation_screen_save_button", comment: ""), for: .normal)
         saveButton.addTarget(self, action: #selector(saveTapped), for: .touchUpInside)
     }
 

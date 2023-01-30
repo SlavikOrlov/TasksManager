@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  MyTasks
+
+  Created by Slava Orlov on 30.01.2023.
+  
+*/
+
+"main_screen_title" = "Мои задачи";
+"creation_screen_title" = "Создать задачу";
+"creation_screen_save_button" = "Сохранить задачу";

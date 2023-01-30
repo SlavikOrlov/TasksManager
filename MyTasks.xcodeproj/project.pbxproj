@@ -36,6 +36,8 @@
 		55442755298827EA00CC1B3E /* TaskCreationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55442754298827EA00CC1B3E /* TaskCreationProtocols.swift */; };
 		554427572988280600CC1B3E /* TaskCreationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554427562988280600CC1B3E /* TaskCreationPresenter.swift */; };
 		554427592988282A00CC1B3E /* TaskCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554427582988282A00CC1B3E /* TaskCreationViewController.swift */; };
+		5544275B2988300C00CC1B3E /* AssetColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5544275A2988300C00CC1B3E /* AssetColor.swift */; };
+		554427602988319B00CC1B3E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 554427622988319B00CC1B3E /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,9 @@
 		55442754298827EA00CC1B3E /* TaskCreationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCreationProtocols.swift; sourceTree = "<group>"; };
 		554427562988280600CC1B3E /* TaskCreationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCreationPresenter.swift; sourceTree = "<group>"; };
 		554427582988282A00CC1B3E /* TaskCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCreationViewController.swift; sourceTree = "<group>"; };
+		5544275A2988300C00CC1B3E /* AssetColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetColor.swift; sourceTree = "<group>"; };
+		554427612988319B00CC1B3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		554427672988351900CC1B3E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +113,7 @@
 				0968F4172984909E00836358 /* App */,
 				0968F41529848DF000836358 /* Core */,
 				099E586229831EFC00F3FD34 /* Services */,
+				5544275C2988315200CC1B3E /* Resources */,
 				09449E2A2983170E00C6ECCD /* Assets.xcassets */,
 				09449E2C2983170E00C6ECCD /* LaunchScreen.storyboard */,
 				09449E2F2983170E00C6ECCD /* Info.plist */,
@@ -256,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				553B23662987DA8F00F17D94 /* UIViewController + Presentable.swift */,
+				5544275A2988300C00CC1B3E /* AssetColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -320,6 +327,22 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		5544275C2988315200CC1B3E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5544275D2988315E00CC1B3E /* Strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5544275D2988315E00CC1B3E /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				554427622988319B00CC1B3E /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -362,6 +385,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 09449E152983170C00C6ECCD;
 			productRefGroup = 09449E1F2983170C00C6ECCD /* Products */;
@@ -379,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09449E2E2983170E00C6ECCD /* LaunchScreen.storyboard in Resources */,
+				554427602988319B00CC1B3E /* Localizable.strings in Resources */,
 				09449E2B2983170E00C6ECCD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +425,7 @@
 				099E58A5298340B000F3FD34 /* SavingLocalData.xcdatamodeld in Sources */,
 				553B235E2987D9CD00F17D94 /* MainScreenAssembler.swift in Sources */,
 				553B23862987E55000F17D94 /* TaskCell.swift in Sources */,
+				5544275B2988300C00CC1B3E /* AssetColor.swift in Sources */,
 				092F140A29840A6B00615E14 /* TaskGroupDTO+CoreDataClass.swift in Sources */,
 				553B23702987DDD400F17D94 /* ContainerAssembler.swift in Sources */,
 				553B236C2987DABC00F17D94 /* AppRouterImplementation.swift in Sources */,
@@ -431,6 +457,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		554427622988319B00CC1B3E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				554427612988319B00CC1B3E /* en */,
+				554427672988351900CC1B3E /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -438,6 +473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -498,6 +534,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

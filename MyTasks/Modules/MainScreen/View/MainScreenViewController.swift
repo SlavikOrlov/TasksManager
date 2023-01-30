@@ -42,14 +42,14 @@ extension MainScreenViewController: MainScreenViewInput {
 private extension MainScreenViewController {
 
     func configureUI() {
-        title = "Tasks"
+        title = NSLocalizedString("main_screen_title", comment: "")
         configureBackground()
         configureTableView()
         configureNavigationBar()
     }
 
     func configureBackground() {
-        view.backgroundColor = .white
+        view.backgroundColor = AssetColor.white
     }
 
     func configureTableView() {
@@ -58,7 +58,6 @@ private extension MainScreenViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.allowsMultipleSelection = true
-        tableView.separatorStyle = .none
         tableView.register(
             TaskCell.self,
             forCellReuseIdentifier: String(describing: TaskCell.self)
