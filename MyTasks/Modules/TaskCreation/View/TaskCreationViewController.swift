@@ -9,6 +9,15 @@ import UIKit
 
 final class TaskCreationViewController: UIViewController {
 
+    // MARK: - Constants
+
+    private enum Constants {
+        static let leftConstraint: Double = 16
+        static let rightConstraint: Double = -16
+        static let heightConstraint: Double = 50
+        static let buttonCornerRadius: Double = 20
+    }
+
     // MARK: - Properties
 
     var output: TaskCreationViewOutput?
@@ -39,6 +48,7 @@ private extension TaskCreationViewController {
         configureTextField()
         configureSaveButton()
         configureLayout()
+        setupKeyboardNotificaition()
     }
 
     func configureBackground() {
@@ -55,7 +65,7 @@ private extension TaskCreationViewController {
         view.addSubview(saveButton)
         saveButton.translatesAutoresizingMaskIntoConstraints = false
         saveButton.backgroundColor = AssetColor.blue
-        saveButton.layer.cornerRadius = 20
+        saveButton.layer.cornerRadius = Constants.buttonCornerRadius
         saveButton.setTitle(NSLocalizedString("creation_screen_save_button", comment: ""), for: .normal)
         saveButton.addTarget(self, action: #selector(saveTapped), for: .touchUpInside)
     }
@@ -64,33 +74,37 @@ private extension TaskCreationViewController {
         NSLayoutConstraint.activate([
             textField.leadingAnchor.constraint(
                 equalTo: view.safeAreaLayoutGuide.leadingAnchor,
-                constant: 16
+                constant: Constants.leftConstraint
             ),
             textField.topAnchor.constraint(
                 equalTo: view.safeAreaLayoutGuide.topAnchor
             ),
             textField.trailingAnchor.constraint(
                 equalTo: view.safeAreaLayoutGuide.trailingAnchor,
-                constant: -16
+                constant: Constants.rightConstraint
             ),
             textField.heightAnchor.constraint(
-                equalToConstant: 50
+                equalToConstant: Constants.heightConstraint
             )
         ])
         NSLayoutConstraint.activate([
             saveButton.leadingAnchor.constraint(
                 equalTo: view.safeAreaLayoutGuide.leadingAnchor,
-                constant: 16
+                constant: Constants.leftConstraint
             ),
             saveButton.trailingAnchor.constraint(
                 equalTo: view.safeAreaLayoutGuide.trailingAnchor,
-                constant: -16
+                constant: Constants.rightConstraint
             ),
             saveButton.bottomAnchor.constraint(
                 equalTo: view.safeAreaLayoutGuide.bottomAnchor
             ),
-            saveButton.heightAnchor.constraint(equalToConstant: 50)
+            saveButton.heightAnchor.constraint(equalToConstant: Constants.heightConstraint)
         ])
+    }
+
+    func setupKeyboardNotificaition() {
+        self.hideKeyboardOnTap()
     }
 
 }

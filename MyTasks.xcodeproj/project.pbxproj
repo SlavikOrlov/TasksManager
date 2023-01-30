@@ -38,6 +38,7 @@
 		554427592988282A00CC1B3E /* TaskCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554427582988282A00CC1B3E /* TaskCreationViewController.swift */; };
 		5544275B2988300C00CC1B3E /* AssetColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5544275A2988300C00CC1B3E /* AssetColor.swift */; };
 		554427602988319B00CC1B3E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 554427622988319B00CC1B3E /* Localizable.strings */; };
+		55442769298835C400CC1B3E /* UIViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55442768298835C400CC1B3E /* UIViewController+Keyboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		5544275A2988300C00CC1B3E /* AssetColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetColor.swift; sourceTree = "<group>"; };
 		554427612988319B00CC1B3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		554427672988351900CC1B3E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		55442768298835C400CC1B3E /* UIViewController+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Keyboard.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +265,7 @@
 			children = (
 				553B23662987DA8F00F17D94 /* UIViewController + Presentable.swift */,
 				5544275A2988300C00CC1B3E /* AssetColor.swift */,
+				55442768298835C400CC1B3E /* UIViewController+Keyboard.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -433,6 +436,7 @@
 				0968F41129848B8200836358 /* CoreDataStorage.swift in Sources */,
 				553B23742987DDEB00F17D94 /* DIContainer.swift in Sources */,
 				553B23602987D9ED00F17D94 /* MainScreenProtocols.swift in Sources */,
+				55442769298835C400CC1B3E /* UIViewController+Keyboard.swift in Sources */,
 				09449E222983170C00C6ECCD /* AppDelegate.swift in Sources */,
 				553B23672987DA8F00F17D94 /* UIViewController + Presentable.swift in Sources */,
 				0968F40D2984453500836358 /* TaskDTO+CoreDataClass.swift in Sources */,
