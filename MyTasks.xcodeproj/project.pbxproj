@@ -20,7 +20,6 @@
 		099E586B2983209100F3FD34 /* TaskProviderImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099E586A2983209100F3FD34 /* TaskProviderImplementation.swift */; };
 		099E58A5298340B000F3FD34 /* SavingLocalData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 099E58A3298340B000F3FD34 /* SavingLocalData.xcdatamodeld */; };
 		099E58AD2983A8C400F3FD34 /* TaskProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099E58AC2983A8C400F3FD34 /* TaskProvider.swift */; };
-		553B23582987D96E00F17D94 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B23572987D96E00F17D94 /* MainScreenViewController.swift */; };
 		553B235E2987D9CD00F17D94 /* MainScreenAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B235D2987D9CD00F17D94 /* MainScreenAssembler.swift */; };
 		553B23602987D9ED00F17D94 /* MainScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B235F2987D9ED00F17D94 /* MainScreenProtocols.swift */; };
 		553B23622987DA0500F17D94 /* MainScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B23612987DA0500F17D94 /* MainScreenPresenter.swift */; };
@@ -31,6 +30,11 @@
 		553B23702987DDD400F17D94 /* ContainerAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B236F2987DDD400F17D94 /* ContainerAssembler.swift */; };
 		553B23722987DDE000F17D94 /* DIContainerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B23712987DDE000F17D94 /* DIContainerImplementation.swift */; };
 		553B23742987DDEB00F17D94 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B23732987DDEB00F17D94 /* DIContainer.swift */; };
+		553B23772987E17300F17D94 /* MainScreenTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B23762987E17300F17D94 /* MainScreenTableViewAdapter.swift */; };
+		553B23812987E42700F17D94 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B237F2987E42700F17D94 /* MainScreenViewController.swift */; };
+		553B23822987E42700F17D94 /* MainScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 553B23802987E42700F17D94 /* MainScreenViewController.xib */; };
+		553B23862987E55000F17D94 /* MainScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B23842987E55000F17D94 /* MainScreenTableViewCell.swift */; };
+		553B23872987E55000F17D94 /* MainScreenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 553B23852987E55000F17D94 /* MainScreenTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +53,6 @@
 		099E586A2983209100F3FD34 /* TaskProviderImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskProviderImplementation.swift; sourceTree = "<group>"; };
 		099E58A4298340B000F3FD34 /* SavingLocalData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SavingLocalData.xcdatamodel; sourceTree = "<group>"; };
 		099E58AC2983A8C400F3FD34 /* TaskProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskProvider.swift; sourceTree = "<group>"; };
-		553B23572987D96E00F17D94 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		553B235D2987D9CD00F17D94 /* MainScreenAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenAssembler.swift; sourceTree = "<group>"; };
 		553B235F2987D9ED00F17D94 /* MainScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenProtocols.swift; sourceTree = "<group>"; };
 		553B23612987DA0500F17D94 /* MainScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenPresenter.swift; sourceTree = "<group>"; };
@@ -60,6 +63,11 @@
 		553B236F2987DDD400F17D94 /* ContainerAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerAssembler.swift; sourceTree = "<group>"; };
 		553B23712987DDE000F17D94 /* DIContainerImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainerImplementation.swift; sourceTree = "<group>"; };
 		553B23732987DDEB00F17D94 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		553B23762987E17300F17D94 /* MainScreenTableViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenTableViewAdapter.swift; sourceTree = "<group>"; };
+		553B237F2987E42700F17D94 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		553B23802987E42700F17D94 /* MainScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainScreenViewController.xib; sourceTree = "<group>"; };
+		553B23842987E55000F17D94 /* MainScreenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenTableViewCell.swift; sourceTree = "<group>"; };
+		553B23852987E55000F17D94 /* MainScreenTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainScreenTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +199,7 @@
 		553B23562987D93100F17D94 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
+				553B23752987E14300F17D94 /* Adapter */,
 				553B235B2987D9A800F17D94 /* Assembler */,
 				553B23592987D98500F17D94 /* View */,
 				553B235A2987D99600F17D94 /* Presenter */,
@@ -202,7 +211,9 @@
 		553B23592987D98500F17D94 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				553B23572987D96E00F17D94 /* MainScreenViewController.swift */,
+				553B237F2987E42700F17D94 /* MainScreenViewController.swift */,
+				553B23802987E42700F17D94 /* MainScreenViewController.xib */,
+				553B23832987E52100F17D94 /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -255,6 +266,23 @@
 				553B236B2987DABC00F17D94 /* AppRouterImplementation.swift */,
 			);
 			path = AppRouter;
+			sourceTree = "<group>";
+		};
+		553B23752987E14300F17D94 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				553B23762987E17300F17D94 /* MainScreenTableViewAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		553B23832987E52100F17D94 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				553B23842987E55000F17D94 /* MainScreenTableViewCell.swift */,
+				553B23852987E55000F17D94 /* MainScreenTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,8 +343,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				553B23872987E55000F17D94 /* MainScreenTableViewCell.xib in Resources */,
 				09449E2E2983170E00C6ECCD /* LaunchScreen.storyboard in Resources */,
 				09449E2B2983170E00C6ECCD /* Assets.xcassets in Resources */,
+				553B23822987E42700F17D94 /* MainScreenViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,11 +359,13 @@
 			files = (
 				0968F41429848CCA00836358 /* CoreDataStorageImplementation.swift in Sources */,
 				099E58AD2983A8C400F3FD34 /* TaskProvider.swift in Sources */,
+				553B23772987E17300F17D94 /* MainScreenTableViewAdapter.swift in Sources */,
 				099E586B2983209100F3FD34 /* TaskProviderImplementation.swift in Sources */,
 				092F140B29840A6B00615E14 /* TaskGroupDTO+CoreDataProperties.swift in Sources */,
+				553B23812987E42700F17D94 /* MainScreenViewController.swift in Sources */,
 				099E58A5298340B000F3FD34 /* SavingLocalData.xcdatamodeld in Sources */,
 				553B235E2987D9CD00F17D94 /* MainScreenAssembler.swift in Sources */,
-				553B23582987D96E00F17D94 /* MainScreenViewController.swift in Sources */,
+				553B23862987E55000F17D94 /* MainScreenTableViewCell.swift in Sources */,
 				092F140A29840A6B00615E14 /* TaskGroupDTO+CoreDataClass.swift in Sources */,
 				553B23702987DDD400F17D94 /* ContainerAssembler.swift in Sources */,
 				553B236C2987DABC00F17D94 /* AppRouterImplementation.swift in Sources */,

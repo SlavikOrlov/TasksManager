@@ -9,19 +9,39 @@ import UIKit
 
 class MainScreenViewController: UIViewController {
 
+    // MARK: - IBOutlets
+    
+    @IBOutlet private weak var tableView: UITableView!
+
     // MARK: - Properties
 
     var output: MainScreenViewOutput?
+
+    // MARK: - Private Properties
+
+    private var adapter: MainScreenTableViewAdapter?
 
     // MARK: - View Controller
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        configureBackground()
+        configureTableView()
     }
+
 }
 
-// MARK: - Public Methods
+// MARK: - Private Methods
 
 extension MainScreenViewController: MainScreenViewInput {
+
+    func configureBackground() {
+        view.backgroundColor = .red
+    }
+
+    func configureTableView() {
+        self.tableView.backgroundColor = .red
+        self.tableView.separatorStyle = .none
+    }
+
 }
