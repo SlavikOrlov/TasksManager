@@ -30,11 +30,12 @@
 		553B23702987DDD400F17D94 /* ContainerAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B236F2987DDD400F17D94 /* ContainerAssembler.swift */; };
 		553B23722987DDE000F17D94 /* DIContainerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B23712987DDE000F17D94 /* DIContainerImplementation.swift */; };
 		553B23742987DDEB00F17D94 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B23732987DDEB00F17D94 /* DIContainer.swift */; };
-		553B23772987E17300F17D94 /* MainScreenTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B23762987E17300F17D94 /* MainScreenTableViewAdapter.swift */; };
 		553B23812987E42700F17D94 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B237F2987E42700F17D94 /* MainScreenViewController.swift */; };
-		553B23822987E42700F17D94 /* MainScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 553B23802987E42700F17D94 /* MainScreenViewController.xib */; };
-		553B23862987E55000F17D94 /* MainScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B23842987E55000F17D94 /* MainScreenTableViewCell.swift */; };
-		553B23872987E55000F17D94 /* MainScreenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 553B23852987E55000F17D94 /* MainScreenTableViewCell.xib */; };
+		553B23862987E55000F17D94 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B23842987E55000F17D94 /* TaskCell.swift */; };
+		55442753298827B800CC1B3E /* TaskCreationAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55442752298827B800CC1B3E /* TaskCreationAssembler.swift */; };
+		55442755298827EA00CC1B3E /* TaskCreationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55442754298827EA00CC1B3E /* TaskCreationProtocols.swift */; };
+		554427572988280600CC1B3E /* TaskCreationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554427562988280600CC1B3E /* TaskCreationPresenter.swift */; };
+		554427592988282A00CC1B3E /* TaskCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554427582988282A00CC1B3E /* TaskCreationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,11 +64,12 @@
 		553B236F2987DDD400F17D94 /* ContainerAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerAssembler.swift; sourceTree = "<group>"; };
 		553B23712987DDE000F17D94 /* DIContainerImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainerImplementation.swift; sourceTree = "<group>"; };
 		553B23732987DDEB00F17D94 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
-		553B23762987E17300F17D94 /* MainScreenTableViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenTableViewAdapter.swift; sourceTree = "<group>"; };
 		553B237F2987E42700F17D94 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
-		553B23802987E42700F17D94 /* MainScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainScreenViewController.xib; sourceTree = "<group>"; };
-		553B23842987E55000F17D94 /* MainScreenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenTableViewCell.swift; sourceTree = "<group>"; };
-		553B23852987E55000F17D94 /* MainScreenTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainScreenTableViewCell.xib; sourceTree = "<group>"; };
+		553B23842987E55000F17D94 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		55442752298827B800CC1B3E /* TaskCreationAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCreationAssembler.swift; sourceTree = "<group>"; };
+		55442754298827EA00CC1B3E /* TaskCreationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCreationProtocols.swift; sourceTree = "<group>"; };
+		554427562988280600CC1B3E /* TaskCreationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCreationPresenter.swift; sourceTree = "<group>"; };
+		554427582988282A00CC1B3E /* TaskCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCreationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				553B23562987D93100F17D94 /* MainScreen */,
+				5544274D2988277500CC1B3E /* TaskCreation */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -199,7 +202,6 @@
 		553B23562987D93100F17D94 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
-				553B23752987E14300F17D94 /* Adapter */,
 				553B235B2987D9A800F17D94 /* Assembler */,
 				553B23592987D98500F17D94 /* View */,
 				553B235A2987D99600F17D94 /* Presenter */,
@@ -212,7 +214,6 @@
 			isa = PBXGroup;
 			children = (
 				553B237F2987E42700F17D94 /* MainScreenViewController.swift */,
-				553B23802987E42700F17D94 /* MainScreenViewController.xib */,
 				553B23832987E52100F17D94 /* Cell */,
 			);
 			path = View;
@@ -268,21 +269,55 @@
 			path = AppRouter;
 			sourceTree = "<group>";
 		};
-		553B23752987E14300F17D94 /* Adapter */ = {
-			isa = PBXGroup;
-			children = (
-				553B23762987E17300F17D94 /* MainScreenTableViewAdapter.swift */,
-			);
-			path = Adapter;
-			sourceTree = "<group>";
-		};
 		553B23832987E52100F17D94 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				553B23842987E55000F17D94 /* MainScreenTableViewCell.swift */,
-				553B23852987E55000F17D94 /* MainScreenTableViewCell.xib */,
+				553B23842987E55000F17D94 /* TaskCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		5544274D2988277500CC1B3E /* TaskCreation */ = {
+			isa = PBXGroup;
+			children = (
+				5544274E2988278C00CC1B3E /* Assembler */,
+				5544274F2988279300CC1B3E /* View */,
+				554427502988279900CC1B3E /* Presenter */,
+				554427512988279E00CC1B3E /* Protocols */,
+			);
+			path = TaskCreation;
+			sourceTree = "<group>";
+		};
+		5544274E2988278C00CC1B3E /* Assembler */ = {
+			isa = PBXGroup;
+			children = (
+				55442752298827B800CC1B3E /* TaskCreationAssembler.swift */,
+			);
+			path = Assembler;
+			sourceTree = "<group>";
+		};
+		5544274F2988279300CC1B3E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				554427582988282A00CC1B3E /* TaskCreationViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		554427502988279900CC1B3E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				554427562988280600CC1B3E /* TaskCreationPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		554427512988279E00CC1B3E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				55442754298827EA00CC1B3E /* TaskCreationProtocols.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,10 +378,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				553B23872987E55000F17D94 /* MainScreenTableViewCell.xib in Resources */,
 				09449E2E2983170E00C6ECCD /* LaunchScreen.storyboard in Resources */,
 				09449E2B2983170E00C6ECCD /* Assets.xcassets in Resources */,
-				553B23822987E42700F17D94 /* MainScreenViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,13 +392,14 @@
 			files = (
 				0968F41429848CCA00836358 /* CoreDataStorageImplementation.swift in Sources */,
 				099E58AD2983A8C400F3FD34 /* TaskProvider.swift in Sources */,
-				553B23772987E17300F17D94 /* MainScreenTableViewAdapter.swift in Sources */,
 				099E586B2983209100F3FD34 /* TaskProviderImplementation.swift in Sources */,
+				55442755298827EA00CC1B3E /* TaskCreationProtocols.swift in Sources */,
 				092F140B29840A6B00615E14 /* TaskGroupDTO+CoreDataProperties.swift in Sources */,
+				55442753298827B800CC1B3E /* TaskCreationAssembler.swift in Sources */,
 				553B23812987E42700F17D94 /* MainScreenViewController.swift in Sources */,
 				099E58A5298340B000F3FD34 /* SavingLocalData.xcdatamodeld in Sources */,
 				553B235E2987D9CD00F17D94 /* MainScreenAssembler.swift in Sources */,
-				553B23862987E55000F17D94 /* MainScreenTableViewCell.swift in Sources */,
+				553B23862987E55000F17D94 /* TaskCell.swift in Sources */,
 				092F140A29840A6B00615E14 /* TaskGroupDTO+CoreDataClass.swift in Sources */,
 				553B23702987DDD400F17D94 /* ContainerAssembler.swift in Sources */,
 				553B236C2987DABC00F17D94 /* AppRouterImplementation.swift in Sources */,
@@ -376,8 +410,10 @@
 				09449E222983170C00C6ECCD /* AppDelegate.swift in Sources */,
 				553B23672987DA8F00F17D94 /* UIViewController + Presentable.swift in Sources */,
 				0968F40D2984453500836358 /* TaskDTO+CoreDataClass.swift in Sources */,
+				554427572988280600CC1B3E /* TaskCreationPresenter.swift in Sources */,
 				553B236E2987DAEE00F17D94 /* Presentable.swift in Sources */,
 				553B23722987DDE000F17D94 /* DIContainerImplementation.swift in Sources */,
+				554427592988282A00CC1B3E /* TaskCreationViewController.swift in Sources */,
 				09449E242983170C00C6ECCD /* SceneDelegate.swift in Sources */,
 				553B236A2987DAAB00F17D94 /* AppRouter.swift in Sources */,
 				553B23622987DA0500F17D94 /* MainScreenPresenter.swift in Sources */,

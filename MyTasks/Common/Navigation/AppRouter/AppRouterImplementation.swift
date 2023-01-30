@@ -13,6 +13,9 @@ final class AppRouterImplementation {
 
     private var window: UIWindow
     private var container: DIContainer
+    private var navigationController: UINavigationController? {
+        window.rootViewController as? UINavigationController
+    }
 
     // MARK: - Initialization
 
@@ -37,6 +40,26 @@ extension AppRouterImplementation: AppRouter {
                 rootViewController: module.viewContoller
             )
             window.makeKeyAndVisible()
+        } catch let error {
+            fatalError(error.localizedDescription)
+        }
+    }
+
+    func dismissModule() {
+        navigationController?.popViewController(animated: true)
+    }
+
+    func showTaskCreation(output: TaskCreationModuleOutput) {
+        do {
+            let module = TaskCreationAssembler.assemble(
+                router: self,
+                output: output,
+                taskProvider: try container.resolve()
+            )
+            navigationController?.pushViewController(
+                module.viewContoller,
+                animated: true
+            )
         } catch let error {
             fatalError(error.localizedDescription)
         }

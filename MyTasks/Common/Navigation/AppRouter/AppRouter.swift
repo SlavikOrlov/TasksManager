@@ -9,4 +9,6 @@ import UIKit
 
 protocol AppRouter: AnyObject {
     func start()
+    func dismissModule()
+    func showTaskCreation(output: TaskCreationModuleOutput)
 }

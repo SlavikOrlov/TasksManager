@@ -6,10 +6,12 @@
 //
 
 protocol MainScreenViewInput: AnyObject {
+    var tasks: [Task] { get set }
 }
 
 protocol MainScreenViewOutput: AnyObject {
-}
-
-protocol MainScreenModuleOutput: AnyObject {
+    func startAddingTask()
+    func viewDidLoad()
+    func taskDidSelect(_ task: Task)
+    func taskDidDeselect(_ task: Task)
 }

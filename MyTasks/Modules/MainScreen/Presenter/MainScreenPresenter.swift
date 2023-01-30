@@ -7,7 +7,7 @@
 
 final class MainScreenPresenter {
 
-    // MARK: - Internal properties
+    // MARK: - Private properties
 
     private weak var view: MainScreenViewInput?
     private weak var router: AppRouter?
@@ -29,4 +29,33 @@ final class MainScreenPresenter {
 
 extension MainScreenPresenter: MainScreenViewOutput {
 
+    func startAddingTask() {
+        router?.showTaskCreation(output: self)
+    }
+
+    func viewDidLoad() {
+        view?.tasks = taskProvider.getTasks()
+    }
+
+    func taskDidSelect(_ task: Task) {
+        var task = task
+        task.isCompleted = true
+        taskProvider.update(task)
+    }
+
+    func taskDidDeselect(_ task: Task) {
+        var task = task
+        task.isCompleted = false
+        taskProvider.update(task)
+    }
+
 }
+
+extension MainScreenPresenter: TaskCreationModuleOutput {
+
+    func taskDidCreate() {
+        view?.tasks = taskProvider.getTasks()
+    }
+
+}
+
