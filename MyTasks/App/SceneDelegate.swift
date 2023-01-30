@@ -13,13 +13,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     private var router: AppRouter?
 
+    private lazy var container: DIContainer = {
+        ContainerAssembler.makeContainer()
+    }()
+
     func scene(_ scene: UIScene,
                willConnectTo session: UISceneSession,
                options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: scene)
         self.window = window
-        router = AppRouterImplementation(window: window)
+        router = AppRouterImplementation(window: window, container: container)
         router?.start()
     }
 

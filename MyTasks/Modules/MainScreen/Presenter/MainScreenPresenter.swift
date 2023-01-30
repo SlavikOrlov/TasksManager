@@ -9,10 +9,20 @@ final class MainScreenPresenter {
 
     // MARK: - Internal properties
 
-    var output: MainScreenModuleOutput?
-    weak var view: MainScreenViewInput?
-    weak var router: AppRouter?
-    
+    private weak var view: MainScreenViewInput?
+    private weak var router: AppRouter?
+    private var taskProvider: TaskProvider
+
+    // MARK: - Initialization
+
+    init(view: MainScreenViewInput,
+         router: AppRouter,
+         taskProvider: TaskProvider) {
+        self.view = view
+        self.router = router
+        self.taskProvider = taskProvider
+    }
+
 }
 
 // MARK: - Public Methods

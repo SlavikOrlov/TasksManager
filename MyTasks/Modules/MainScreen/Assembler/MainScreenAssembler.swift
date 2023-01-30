@@ -7,11 +7,13 @@
 
 final class MainScreenAssembler {
 
-    static func assemble(router: AppRouter) -> Presentable {
+    static func assemble(router: AppRouter, taskProvider: TaskProvider) -> Presentable {
         let view = MainScreenViewController()
-        let presenter = MainScreenPresenter()
-        presenter.view = view
-        presenter.router = router
+        let presenter = MainScreenPresenter(
+            view: view,
+            router: router,
+            taskProvider: taskProvider
+        )
         view.output = presenter
         return view
     }

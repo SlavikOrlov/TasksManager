@@ -8,6 +8,5 @@
 import UIKit
 
 protocol AppRouter: AnyObject {
-    init(window: UIWindow)
     func start()
 }

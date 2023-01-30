@@ -28,6 +28,9 @@
 		553B236A2987DAAB00F17D94 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B23692987DAAB00F17D94 /* AppRouter.swift */; };
 		553B236C2987DABC00F17D94 /* AppRouterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B236B2987DABC00F17D94 /* AppRouterImplementation.swift */; };
 		553B236E2987DAEE00F17D94 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B236D2987DAEE00F17D94 /* Presentable.swift */; };
+		553B23702987DDD400F17D94 /* ContainerAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B236F2987DDD400F17D94 /* ContainerAssembler.swift */; };
+		553B23722987DDE000F17D94 /* DIContainerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B23712987DDE000F17D94 /* DIContainerImplementation.swift */; };
+		553B23742987DDEB00F17D94 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B23732987DDEB00F17D94 /* DIContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		553B23692987DAAB00F17D94 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		553B236B2987DABC00F17D94 /* AppRouterImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterImplementation.swift; sourceTree = "<group>"; };
 		553B236D2987DAEE00F17D94 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		553B236F2987DDD400F17D94 /* ContainerAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerAssembler.swift; sourceTree = "<group>"; };
+		553B23712987DDE000F17D94 /* DIContainerImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainerImplementation.swift; sourceTree = "<group>"; };
+		553B23732987DDEB00F17D94 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +181,9 @@
 		553B23552987D14000F17D94 /* DI */ = {
 			isa = PBXGroup;
 			children = (
+				553B23732987DDEB00F17D94 /* DIContainer.swift */,
+				553B23712987DDE000F17D94 /* DIContainerImplementation.swift */,
+				553B236F2987DDD400F17D94 /* ContainerAssembler.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -326,14 +335,17 @@
 				553B235E2987D9CD00F17D94 /* MainScreenAssembler.swift in Sources */,
 				553B23582987D96E00F17D94 /* MainScreenViewController.swift in Sources */,
 				092F140A29840A6B00615E14 /* TaskGroupDTO+CoreDataClass.swift in Sources */,
+				553B23702987DDD400F17D94 /* ContainerAssembler.swift in Sources */,
 				553B236C2987DABC00F17D94 /* AppRouterImplementation.swift in Sources */,
 				0968F40E2984453500836358 /* TaskDTO+CoreDataProperties.swift in Sources */,
 				0968F41129848B8200836358 /* CoreDataStorage.swift in Sources */,
+				553B23742987DDEB00F17D94 /* DIContainer.swift in Sources */,
 				553B23602987D9ED00F17D94 /* MainScreenProtocols.swift in Sources */,
 				09449E222983170C00C6ECCD /* AppDelegate.swift in Sources */,
 				553B23672987DA8F00F17D94 /* UIViewController + Presentable.swift in Sources */,
 				0968F40D2984453500836358 /* TaskDTO+CoreDataClass.swift in Sources */,
 				553B236E2987DAEE00F17D94 /* Presentable.swift in Sources */,
+				553B23722987DDE000F17D94 /* DIContainerImplementation.swift in Sources */,
 				09449E242983170C00C6ECCD /* SceneDelegate.swift in Sources */,
 				553B236A2987DAAB00F17D94 /* AppRouter.swift in Sources */,
 				553B23622987DA0500F17D94 /* MainScreenPresenter.swift in Sources */,
